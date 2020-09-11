@@ -1,7 +1,8 @@
 # Code your solution here!
 
 def run_guessing_game 
-  prompt_us
+  prompt_user
+  
   rand(6) + 1
   input = get_user_input
 end
