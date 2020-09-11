@@ -13,6 +13,7 @@ def run_guessing_game
     puts "Sorry! The computer guessed #{random}."
   end
   return
+  binding.pry
 end
 
 def random
