@@ -1,13 +1,15 @@
 # Code your solution here!
 
 def run_guessing_game 
+  random  
   prompt_user
   
-  rand(6) + 1
   input = get_user_input
 end
 
-
+def random
+  rand(6) + 1
+end
 
 def prompt_user
   puts "Guess number between 1 and 6"
