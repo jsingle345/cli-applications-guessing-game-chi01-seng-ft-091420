@@ -6,12 +6,13 @@ def run_guessing_game
   input = get_user_input
   if input === random 
     puts "You guessed the correct number!"
-  else 
+  elsif
+    input === exit 
+    puts "Goodbye!"
+  else
     puts "Sorry! The computer guessed #{random}."
-  elsif 
-    
   end
-  
+  bye 
 end
 
 def random
@@ -26,6 +27,9 @@ def get_user_input
   gets.chomp
 end
 
+def bye 
+  puts "Goodbye!"
+end
 require_relative 'spec_helper'
 
 describe "Guessing CLI" do
