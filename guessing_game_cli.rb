@@ -3,7 +3,7 @@
 def run_guessing_game 
 
   rand(6) + 1
-  input = gets.chomp
+  input = get_user_input
 end
 
 
