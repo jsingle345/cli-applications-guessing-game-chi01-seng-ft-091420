@@ -6,13 +6,12 @@ def run_guessing_game
   input = get_user_input
   if input === random 
     puts "You guessed the correct number!"
-  elsif
-    input === exit 
+  elsif input === exit 
     puts "Goodbye!"
   else
     puts "Sorry! The computer guessed #{random}."
   end
-  bye 
+  
 end
 
 def random
